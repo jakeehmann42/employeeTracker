@@ -26,3 +26,23 @@ use employees;
 INSERT INTO department
 	(name)
 VALUES
+    ('Executive'),
+    ('Statistics'),
+    ('Accounts'),
+    ('CAB');
+INSERT INTO role
+    (title, salary, department_id)
+VALUES
+    ('CEO', 1000000, 1),
+    ('Director', 200000, 2),
+    ('Manager', 150000, 3),
+    ('Associate', 50000, 4),
+    ('Contractor', 30000, 5),
+INSERT INTO employee
+    (first_name, last_name, role_id, manager_id)
+VALUES
+    ('Allen', 'Roberts', 1, NULL),
+    ('Matt', 'Mehok', 2, 1),
+    ('Thad', 'Ehmann', 3, NULL),
+    ('Michelle', 'Rosowitz', 4, 3),
+    ('Lindsay', 'Ehmann', 5, NULL),
